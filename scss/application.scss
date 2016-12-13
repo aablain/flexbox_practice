@@ -1,0 +1,59 @@
+@import 'reset';
+@import 'mixins';
+
+*:not(html) {
+  border: 1px dotted black;
+}
+
+body {
+  font-size: 62.5%;
+  margin: auto;
+  max-width: 1300px;
+  height: 90vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 250px;
+    background-color: peachpuff;
+    margin: 4px;
+    img {
+      max-width: 60%;
+      margin: 10px;
+      align-self: center;
+      order: 1;
+      &:active {
+        @include colorchange;
+      }
+    }
+    p {
+      order: 2;
+      font-size: 1rem;
+    }
+    &:hover {
+      background-color: honeydew;
+      h2 {
+        background-color: antiquewhite;
+        color: grey;
+      }
+    }
+  }
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  flex-basis: 1300px;
+  font-size: 2.5rem;
+  text-decoration: underline;
+  text-align: center;
+}
+h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: #888;
+  color: whitesmoke;
+}

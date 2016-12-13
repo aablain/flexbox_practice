@@ -1,0 +1,99 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*:not(html) {
+  border: 1px dotted black; }
+
+body {
+  font-size: 62.5%;
+  margin: auto;
+  max-width: 1300px;
+  height: 90vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+  body div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 250px;
+    background-color: peachpuff;
+    margin: 4px; }
+    body div img {
+      max-width: 60%;
+      margin: 10px;
+      align-self: center;
+      order: 1; }
+      body div img:active {
+        transform: scale(1.2); }
+        body div img:active ~ h1 {
+          background-color: red; }
+    body div p {
+      order: 2;
+      font-size: 1rem; }
+    body div:hover {
+      background-color: honeydew; }
+      body div:hover h2 {
+        background-color: antiquewhite;
+        color: grey; }
+
+h1 {
+  display: flex;
+  justify-content: center;
+  flex-basis: 1300px;
+  font-size: 2.5rem;
+  text-decoration: underline;
+  text-align: center; }
+
+h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: #888;
+  color: whitesmoke; }
+
+/*# sourceMappingURL=application.css.map */

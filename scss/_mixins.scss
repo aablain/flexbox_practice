@@ -1,0 +1,6 @@
+@mixin colorchange() {
+  transform: scale(1.2);
+  & ~ h1 {
+    background-color: red;
+  }
+}
